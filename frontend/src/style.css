@@ -1,0 +1,373 @@
+body {
+    background-color: #D8E3E7;
+    padding: 0px;
+    margin: 0px;
+    font-family:monospace;
+    
+}
+
+
+/* Login CSS */
+.login {
+    border: 2px solid #51C4D3;
+    background-color: #126E82;
+    width: 20%;
+    height: 325px;
+    margin-top: 200px;
+    margin-left: 25%;
+    position: absolute;
+    border-radius: 10px;
+
+}
+
+.login > *, .signup > * {
+    margin-left: 20px;
+}
+
+.login-form, .signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* justify-content: flex-end; */
+}
+
+.login-form > *, .signup-form > * {
+    margin: 5px 20%;
+    padding: 10px;
+}
+
+/* Signup CSS */
+.signup {
+    display: flex;
+    border: 5px solid #1D5C63;
+    background-color: #126E82;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 50%;
+    flex-direction: column;
+    width: 20%;
+    height: 670px;
+    border-radius: 10px;
+}
+
+.index-input {
+    border-radius: 5px;
+    border-style:ridge;
+    width: 60%;
+}
+
+.text {
+    font-size: 17px;
+    color: rgb(213, 223, 231);
+}
+
+.title-text {
+    font-size: 30px;
+}
+
+.link-text, .link-text:active, .link-text:focus {
+    font-weight: 700;
+    text-decoration: none;
+    color: inherit;
+    
+}
+
+.link-text:hover {
+    text-decoration: underline;
+    color: rgb(238, 154, 57);
+}
+
+.button {
+    border-radius: 5px;
+    border-style: none;
+    font-family: monospace;
+    background-color: #D8E3E7;
+}
+
+.button:hover {
+    background-color: rgb(238, 154, 57);
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.passwordValidator {
+    color:  rgb(255, 134, 134);
+}
+
+/* a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    } */
+
+/* Feed CSS */
+.feed {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: flex-start;
+}
+
+/********************************************************************************************/
+/* .feed > * {
+    border: 1px solid black;
+} */
+
+.left-side-bar {
+    position: fixed;
+    width: 20%;
+}
+
+.leftsidebar-placeholder {
+    width: 20%;
+}
+
+.posts {
+    width: 40%;
+}
+
+.right-side-bar {
+    width: 20%;
+}
+
+/* Left side bar CSS */
+
+.left-side-bar {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#search {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border-style: none;
+    font-family: monospace;
+
+    background-image: url("assets/search.png");
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: 14px;
+    text-indent: 10px;
+    padding-left: 25px;
+    transition:0.5s;
+}
+
+#search:focus {
+    background-image:none;
+    text-indent:0px
+}
+
+.searched-user {
+    /* border: 1px solid black; */
+    background-color: white;
+    border-style: none;
+    padding: 10px;
+    width: 90%;
+    box-sizing: border-box;
+    text-align: left;
+    font-family: monospace;
+    /* margin: 5px 0px; */
+    transition: .3s;
+
+}
+
+.searched-user:hover {
+    background-color: #EDE6DB;
+    text-indent: 10px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+/* post area CSS */
+.posts {
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+
+.post-div {
+    background-color: white;
+    margin: 10px 0px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.create-post {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#content {
+    height: 90px;
+    resize: none;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 80%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#content:focus {
+    border: 5px solid #ee9a39;
+}
+
+#post-button, .post-buttons {
+    margin-right: 1%;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border-style: none;
+    font-family: monospace;
+    background-color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#post-button:hover {
+    background-color: #ee9a39;
+    padding: 10px 25px;
+}
+
+.post-div > h3 {
+    word-wrap: break-word;
+    font-size: 19px;
+}
+
+.post-buttons {
+    background-color: #20caf0;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 5px 10px;
+    color: rgb(32, 32, 32);
+}
+
+.post-buttons:hover {
+    cursor: pointer;
+    background-color: #106e83;
+    color: rgb(255, 255, 255);
+}
+
+.edit-post-input{
+    margin-right: 10px;
+}
+
+/* right side bar CSS */
+.r-sidebar-title {
+    border-bottom: 3px solid black;
+    font-size: 25px
+}
+
+.friends {
+    margin-top: 70px;
+}
+
+.name {
+    font-size: 15px;
+    line-height: 0px;
+}
+
+.r-buttons {
+    margin-top: 0px;
+    margin-right: 10px;
+}
+
+.f-fr {
+    margin-top: 40px;
+}
+
+.logout {
+    font-size: x-large;
+    transition: 2s;
+}
+
+.logout:hover {
+    margin-left: 70%;
+    transition: 2s;
+    cursor:auto;
+}
+
+
+/* user CSS */
+.user-page {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    align-items: flex-start;
+}
+
+.user-div1 {
+    width: 30%;
+    padding: 20px;
+}
+
+.user-div2 {
+    width: 60%;
+    padding: 20px;
+    border-left: 2px solid black;
+
+}
+
+.user-div1 > h3 {
+    font-size: 25px;
+}
+
+.user-div1 > p {
+    font-size: 15px;
+}
+
+.identifier {
+    padding: 10px;
+    background-color: white;
+    display: inline;
+    line-height: 50px;
+    border-radius: 10px;
+}
+
+#back-button {
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 60px;
+    padding: 0px 30px;
+    border-style: none;
+    border-radius: 5px;
+    background-color: white;
+    transition: .2s;
+
+}
+
+#back-button:hover {
+    background-color: #ee9a39;
+    padding: 0px 40px;
+    border-style: none;
+    border-radius: 5px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.user-text {
+    line-height: 0px;
+}
+
+@media screen and (max-width: 809px) {
+    .left-side-bar, .leftsidebar-placeholder{
+        display: none; 
+        width: 0%;
+
+    } 
+
+    .right-side-bar {
+        width: 0%;
+        display: none; 
+    }
+
+    .posts {
+        width: 90%;
+    }
+
+    .feed {
+        justify-content: space-around;
+    }
+}
+
